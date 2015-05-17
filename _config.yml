@@ -1,12 +1,12 @@
 # Site settings
 title: Andy Zhang
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   I'll make sure to come up with something more descriptive to put here in 2009.
 url: "http://andy.zhang.me"
 baseurl: ""
 intro: >
-  I live and work in Shenzhen, spending most of my time at <a href="https://oneplus.net/">OnePlus</a> HQ.
-  When time allows, I make things for the internet and <a href="http://andyzhang.com/">shoot photos</a>.
+  I live and work in Shenzhen, spending most of my days at <a href="https://oneplus.net/">OnePlus</a> HQ.
+  When time allows, I make internet things and <a href="http://andyzhang.com/">shoot photos</a>.
 twitter_url: "https://twitter.com/yesokayawesome"
 linkedin_url: "https://www.linkedin.com/in/andyzhang"
 flickr_url: "https://www.flickr.com/photos/andyzhang"

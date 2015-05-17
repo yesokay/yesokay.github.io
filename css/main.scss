@@ -22,6 +22,10 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-tablet:        800px;
 
+%vertical-rhythm {
+    margin-bottom: $spacing-unit;
+}
+
 
 
 // Using media queries with like this:
@@ -39,11 +43,11 @@ $on-tablet:        800px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-// @import
-//         "base",
-//         "layout",
-//         "syntax-highlighting"
-// ;
+@import
+        // "base",
+        // "layout",
+        "syntax-highlighting"
+;
 
 
 // Reset some basic elements
@@ -125,7 +129,7 @@ a {
 // Header
 header {
 	display: block;
-	margin-bottom: $spacing-unit * 2;
+	margin-bottom: $spacing-unit;
 	a {
 		text-decoration: none;
 		&:visited, &:hover {
@@ -166,7 +170,7 @@ header {
 
 // Intro paragraph
 p#intro{
-	margin: 3em 0;
+	margin: 0 0 5em;
 	max-width: 600px;
 
 	@include media-query($on-palm){
@@ -179,13 +183,15 @@ p#intro{
 
 // Post list
 .post-list{
-
+	list-style: none;
 	li {
 		font-size: 1.5em;
 		line-height: 2em;
-
-		a {
-			text-decoration: none;
+		
+		// Maybe this can be removed at some point, who knows
+		&:before {
+			content: "- ";
+			margin-left: -1.1em;
 		}
 	}
 

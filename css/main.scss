@@ -166,7 +166,7 @@ header {
 
 // Intro paragraph
 p#intro{
-	margin: 5em 0 3em;
+	margin: 3em 0;
 	max-width: 600px;
 
 	@include media-query($on-palm){

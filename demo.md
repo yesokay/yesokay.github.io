@@ -1,5 +1,5 @@
 ---
-template: default
+template: post
 title: This is a demo page
 permalink: /demo.html
 ---

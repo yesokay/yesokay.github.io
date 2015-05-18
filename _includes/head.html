@@ -5,17 +5,7 @@
 	<!--[if lt IE 9]>
 	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-    <title>
-    {% if page.title %}
-        {{ page.title }}
-
-            {% elsif page.error_title %}
-              {{ page.error_title }}
-
-            {% else %}
-            {{ site.title }}
-    {% endif %}
-    </title>
+    <title>{% if page.title %}{{ page.title }}{% elsif page.error_title %}{{ page.error_title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

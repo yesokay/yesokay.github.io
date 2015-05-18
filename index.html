@@ -7,17 +7,19 @@ layout: default
 <p id="intro">{{ site.intro }}</p>
 {% endif %}
 
+{% if site.posts %}
 <nav>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-    {% endfor %}
-    {% for page in site.pages %}
-        {% if page.title %}
-        <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-  </ul>
+<ul class="post-list">
+{% for post in site.posts %}
+  <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+{% endfor %}
+{% for page in site.pages %}
+  {% if page.title %}
+  <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
 </nav>
+{% endif %}
 
 </div>

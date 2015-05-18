@@ -1,18 +1,16 @@
 # Site settings
 title: Andy Zhang
-description: >
-  I'll make sure to come up with something more descriptive to put here in 2009.
+description: I'll make sure to come up with something more descriptive to put here in 2009.
 url: "http://andy.zhang.me"
 baseurl: ""
-intro: >
-  I live and work in Shenzhen, spending most of my days at <a href="https://oneplus.net/">OnePlus</a> HQ.
-  When time allows, I make internet things and <a href="http://andyzhang.com/">shoot photos</a>.
+intro: I live and work in Shenzhen, spending most of my days at <a href="https://oneplus.net/">OnePlus</a> HQ. When time allows, I make internet things and <a href="http://andyzhang.com/">shoot photos</a>.
 twitter_url: "https://twitter.com/yesokayawesome"
 linkedin_url: "https://www.linkedin.com/in/andyzhang"
 flickr_url: "https://www.flickr.com/photos/andyzhang"
 photos_url: "http://andyzhang.com"
 
 # Build settings
+permalink: pretty
 markdown: kramdown
 gems:
   - jekyll-sitemap
